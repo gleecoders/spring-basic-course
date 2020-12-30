@@ -9,8 +9,11 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
 
-<bean id="miEmpleado" class="desancheztorres.SecretarioEmpleado">
-	
+<!-- Creacion de la dependencia -->
+<bean id="miInforme" class="desancheztorres.Informe"></bean>
+
+<bean id="miEmpleado" class="desancheztorres.JefeEmpleado">
+	<constructor-arg ref="miInforme"></constructor-arg>
 </bean>
 
 

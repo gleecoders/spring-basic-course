@@ -19,6 +19,7 @@ public class UsoEmpleados {
 		Empleados Juan = context.getBean("miEmpleado", Empleados.class);
 		
 		System.out.println(Juan.getTareas());
+		System.out.println(Juan.getInforme());
 		
 		context.close();
 
