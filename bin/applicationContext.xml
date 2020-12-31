@@ -16,5 +16,8 @@
 	<constructor-arg ref="miInforme"></constructor-arg>
 </bean>
 
+<bean id="miSecretarioEmpleado" class="desancheztorres.SecretarioEmpleado">
+	<property name="informeNuevo" ref="miInforme"></property>
+</bean>
 
 </beans>

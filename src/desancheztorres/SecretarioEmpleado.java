@@ -2,6 +2,13 @@ package desancheztorres;
 
 public class SecretarioEmpleado implements Empleados {
 	
+	// Creacion de campo tipo CreacionInforme (interfaz)
+	private CreacionInformes informeNuevo;
+		
+	public void setInformeNuevo(CreacionInformes informeNuevo) {
+		this.informeNuevo = informeNuevo;
+	}	
+	
 	@Override
 	public String getTareas() {
 		// TODO Auto-generated method stub
@@ -11,7 +18,7 @@ public class SecretarioEmpleado implements Empleados {
 	@Override
 	public String getInforme() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Informe generado por el secretario: " + informeNuevo.getInforme();
 	}
 
 }
