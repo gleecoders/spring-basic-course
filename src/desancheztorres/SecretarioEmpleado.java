@@ -9,6 +9,22 @@ public class SecretarioEmpleado implements Empleados {
 		this.informeNuevo = informeNuevo;
 	}	
 	
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	@Override
 	public String getTareas() {
 		// TODO Auto-generated method stub
@@ -20,5 +36,8 @@ public class SecretarioEmpleado implements Empleados {
 		// TODO Auto-generated method stub
 		return "Informe generado por el secretario: " + informeNuevo.getInforme();
 	}
+	
+	private String nombreEmpresa;
+	private String email;
 
 }

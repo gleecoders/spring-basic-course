@@ -2,6 +2,22 @@ package desancheztorres;
 
 public class DirectorEmpleado implements Empleados {
 	
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	// Creacion de campo tipo CreacionInforme (interfaz)
 	private CreacionInformes informeNuevo;
 		
@@ -21,5 +37,8 @@ public class DirectorEmpleado implements Empleados {
 		// TODO Auto-generated method stub
 		return "Informe creado por el director: " + informeNuevo.getInforme();
 	}
+	
+	private String nombreEmpresa;
+	private String email;
 
 }

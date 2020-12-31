@@ -12,12 +12,17 @@
 <!-- Creacion de la dependencia -->
 <bean id="miInforme" class="desancheztorres.Informe"></bean>
 
-<bean id="miEmpleado" class="desancheztorres.JefeEmpleado">
+<bean id="miEmpleado" class="desancheztorres.DirectorEmpleado">
 	<constructor-arg ref="miInforme"></constructor-arg>
+	
+	<property name="email" value="equipo_directivo@desancheztorres.com"></property>
+	<property name="nombreEmpresa" value="desancheztorres"></property>
 </bean>
 
 <bean id="miSecretarioEmpleado" class="desancheztorres.SecretarioEmpleado">
 	<property name="informeNuevo" ref="miInforme"></property>
+	<property name="email" value="secretaria@desancheztorres.com"></property>
+	<property name="nombreEmpresa" value="desancheztorres"></property>
 </bean>
 
 </beans>
